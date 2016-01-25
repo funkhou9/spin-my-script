@@ -10,7 +10,7 @@ Internally, `knitr::spin(<script.R>)` is used to convert `<script.R>` into `<scr
 Additionally your project space will be updated. Assuming your project space looks something like this:
 
 ```
-project
+project/
 │   README.md    
 │
 └───subfolder1
@@ -26,7 +26,7 @@ project
 and `$ knitr_spin project/subfolder1/1-script.R intel14 00:10:00 8` is called, the project space will update to:
 
 ```
-project
+project/
 │   README.md    
 │
 └───subfolder1/
