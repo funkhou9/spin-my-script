@@ -9,7 +9,7 @@
 
 ## Installation
 
-To install, execute the following steps:
+To install, execute the following steps from the MSU HPCC:
 
 - Cone this repository
 
@@ -34,7 +34,7 @@ export PATH=$PATH:/path/to/spin-my-script/
 ## Example
 
 
-Using `$ knitr_spin <script.R> intel14 00:10:00 8`
+Using `$ spin <script.R> intel14 00:10:00 8`
 from one of the dev-nodes on Michigan State University's HPCC will submit `<script.R>` to the intel14 cluster with a walltime of 10 minutes and 8GB of RAM.
 
 Internally, `knitr::spin(<script.R>)` is used to convert `<script.R>` into `<script.md>`, the *literate* version of the same script.
@@ -55,7 +55,7 @@ project/
     ...
 ```
 
-and `$ knitr_spin project/subfolder1/1-script.R intel14 00:10:00 8` is called, the project space will update to:
+and `$ spin project/subfolder1/1-script.R intel14 00:10:00 8` is called, the project space will update to:
 
 ```
 project/
