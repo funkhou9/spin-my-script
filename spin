@@ -7,7 +7,7 @@ echo '#PBS -o '`echo $1 | cut -f1 -d.`'_literate/'`echo $1 | cut -f1 -d.`'.out' 
 
 echo 'cd '`pwd` >> base.sh
 
-echo 'Rscript /mnt/home/funkhou9/Productivity/knitr_spin.R' $1 >> base.sh
+echo 'knitr_spin.R' $1 >> base.sh
 
 echo 'if [ -d '`echo $1 | cut -f1 -d.`'_literate/ ]' >> base.sh
 echo '  then' >> base.sh

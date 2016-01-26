@@ -1,3 +1,5 @@
+#!/usr/bin/env Rscript
+
 # Designed to automatically submit an R script
 # 	for literate programming conversion directly
 #	to the MSU HPCC clusters.
