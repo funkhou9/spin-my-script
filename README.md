@@ -11,13 +11,13 @@
 
 To install, execute the following steps:
 
-1. Cone this repository
+- Cone this repository
 
 ```sh
 git clone https://github.com/funkhou9/spin-my-script.git
 ```
 
-2. cd into `spin-my-script` and ensure both `spin` and `knitr_spin.R` are executable
+- cd into `spin-my-script` and ensure both `spin` and `knitr_spin.R` are executable
 
 ```sh
 cd spin-my-script
@@ -25,7 +25,7 @@ chmod +x spin
 chmod +x knitr_spin.R
 ```
 
-3. Add `spin-my-script` to your path, however you like. For instance in your ~/.bashrc file add:
+- Add `spin-my-script` to your path, however you like. For instance in your ~/.bashrc file add:
 
 ```sh
 export PATH=$PATH:/path/to/spin-my-script/
