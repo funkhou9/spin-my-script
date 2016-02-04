@@ -5,7 +5,8 @@
 **Table of Contents**
 
 - [Installation](#installation)
-- [Example](#example)
+- [Usage](#usage)
+- [Note on other languages](#note-on-other-languages)
 
 ## Installation
 
@@ -31,7 +32,7 @@ chmod +x knitr_spin.R
 export PATH=$PATH:/path/to/spin-my-script/
 ```
 
-## Example
+## Usage
 
 
 Using `$ spin <script.R> intel14 00:10:00 8`
@@ -80,4 +81,12 @@ project/
 `1-script.out` contains standard output from the cluster run, which may contain useful information 
 like walltime used, RAM used, etc. `figure/` is a directory produced by the knitr package, which contains 
 all figures generated from `1-script.R`
+
+## Note on other languages
+
+`spin` may be used for scripts written in other languages too. This requires modifying the `engine` setting for each code chunk by placing the following at the top of your script:
+
+```r
+opts_chunk$set(engine="bash")
+```
 
