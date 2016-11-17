@@ -10,7 +10,7 @@
 
 ## Installation
 
-To install, execute the following steps from the MSU HPCC:
+To install, execute the following steps from the remote server:
 
 - Cone this repository
 
@@ -35,8 +35,7 @@ export PATH=$PATH:/path/to/spin-my-script/
 ## Usage
 
 
-Using `$ spin <script.R> intel14 00:10:00 8`
-from one of the dev-nodes on Michigan State University's HPCC will submit `<script.R>` to the intel14 cluster with a walltime of 10 minutes and 8GB of RAM.
+Using `$ spin <script.R> intel14 00:10:00 8` will submit `<script.R>` to the `intel14` cluster with a walltime of `10 minutes` and `8GB` of RAM. You must specify those four arguments: cluster, walltime, RAM.
 
 Internally, `knitr::spin(<script.R>)` is used to convert `<script.R>` into `<script.md>`, the *literate* version of the same script.
 
@@ -78,8 +77,8 @@ project/
 ```
 
 
-`1-script.out` contains standard output from the cluster run, which may contain useful information 
-like walltime used, RAM used, etc. `figure/` is a directory produced by the knitr package, which contains 
+`1-script.out` contains standard output from the cluster run, which may contain useful information
+like walltime used, RAM used, etc. `figure/` is a directory produced by the knitr package, which contains
 all figures generated from `1-script.R`
 
 ## Note on other languages
@@ -90,3 +89,4 @@ all figures generated from `1-script.R`
 opts_chunk$set(engine="bash")
 ```
 
+Note that this has not been tested with other scripting languages other than R
