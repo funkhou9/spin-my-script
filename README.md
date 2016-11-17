@@ -2,7 +2,7 @@
 
 > A bash script used to spin R scripts and organize the output. Relies on the [knitr](https://github.com/yihui/knitr) package developoed by Yihui Xie.
 
-**Table of Contents**
+## Table of Contents
 
 - [Installation](#installation)
 - [Usage](#usage)
@@ -12,25 +12,25 @@
 
 To install, execute the following steps from the remote server:
 
-- Cone this repository
+1. Cone this repository
 
-```sh
-git clone https://github.com/funkhou9/spin-my-script.git
-```
+    ```sh
+    git clone https://github.com/funkhou9/spin-my-script.git
+    ```
 
-- cd into `spin-my-script` and ensure both `spin` and `knitr_spin.R` are executable
+2. cd into `spin-my-script` and ensure both `spin` and `knitr_spin.R` are executable
 
-```sh
-cd spin-my-script
-chmod +x spin
-chmod +x knitr_spin.R
-```
+	```sh
+	cd spin-my-script
+	chmod +x spin
+	chmod +x knitr_spin.R
+	```
 
-- Add `spin-my-script` to your path, however you like. For instance in your ~/.bashrc file add:
+3. Add `spin-my-script` to your path, however you like. For instance in your ~/.bashrc file add:
 
-```sh
-export PATH=$PATH:/path/to/spin-my-script/
-```
+	```sh
+	export PATH=$PATH:/path/to/spin-my-script/
+	```
 
 ## Usage
 
